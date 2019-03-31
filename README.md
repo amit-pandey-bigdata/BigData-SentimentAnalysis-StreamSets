@@ -218,4 +218,4 @@ Below are the configuration i have used in second pipeline's stages:
 
 ![p1111](https://user-images.githubusercontent.com/12975741/55287129-80bad700-53c2-11e9-93f6-66c4b5116637.png)
 
-WIP: i will update the remaining part later.
+Note: i will update the remaining part later.
