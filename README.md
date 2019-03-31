@@ -149,7 +149,7 @@ Step 6: The tweet is saved into RDBMS database.
 
 **Note: The pipeline shown below are different as i captured them before i made the final changes to the pipelines.i have added them here just to give an idea of monitoring and error of any pipeline**
 
-You can monitor running pipeline(comple pipeline or each pipeline step).
+You can monitor running pipeline(comple pipeline or each pipeline stage).
 
 ![p6](https://user-images.githubusercontent.com/12975741/55286620-98429180-53bb-11e9-9247-0d93b4cc5a9a.png)
 
