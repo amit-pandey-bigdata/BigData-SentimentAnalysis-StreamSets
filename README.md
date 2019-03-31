@@ -145,5 +145,30 @@ Step 5: The tweet's text is tokenized(splitted into words).
 Step 6: The tweet is saved into RDBMS database.
 
 
-Pipeline monitoring and data preview(in preview mode, not in running mode)
+**Pipeline monitoring and data preview(in preview mode, not in running mode)**
+
+You can monitor running pipeline(comple pipeline or each pipeline step).
+
+![p6](https://user-images.githubusercontent.com/12975741/55286620-98429180-53bb-11e9-9247-0d93b4cc5a9a.png)
+
+above pipeline shows that 346 tweets have been injested into the pipeline and 346 tweets are loaded into the destination system.
+
+![p2](https://user-images.githubusercontent.com/12975741/55286523-506f3a80-53ba-11e9-9781-00fe81a4e45a.png)
+
+above pipeline shows that what are the good records ,error records ,input records and output records for stage "fields selection".
+
+![p3](https://user-images.githubusercontent.com/12975741/55286527-582edf00-53ba-11e9-927c-82fc5d587299.png)'
+
+above pipeline shows that for the selected stage("stream selector") , input records sent to the stage is 462, output records sent from output 1(Trash) is 106 and output reords sent from output2(field type converter) is 356.
+
+![p4](https://user-images.githubusercontent.com/12975741/55286529-5fee8380-53ba-11e9-9401-2dba541277b0.png)
+
+above pipeline shows the error records
+
+![p5](https://user-images.githubusercontent.com/12975741/55286560-c7a4ce80-53ba-11e9-9d72-d15c94861cd4.png)
+
+above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
+
+
+
 
