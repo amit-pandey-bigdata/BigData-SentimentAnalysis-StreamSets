@@ -4,12 +4,12 @@ Below are the tools used for implementing the use case "Twitter Sentiment Analys
 
 1. Cloudera Cluster 6.0.
 2. StreamSets data collector
-2. Apache Kafka which shipped with CDH 6.0.0.
-3. Apche Spark which shipped with CDH 6.0.0.
+2. Apache Kafka which shipped with CDH 6.0.
+3. Apche Spark which shipped with CDH 6.0.
 4. Natural Language toolkit(NLTK)
 5. Stanford CoreNlp for sentiment analysis
 
-here i will focus to describe StreamSets and the pipeline which is used to implement the use case.
+here i will focus to describe StreamSets and the pipeline which is used to implement the sentiment analysis use case.
 
 **What is StreamSets Data Collector** 
 
@@ -25,17 +25,17 @@ look at a snapshot of data.
 
 **Data collection challenges if we don't use SDC like tool**
 
-1. Custom coding :- in traditinal manual pipelines, we need to write custom code which is very cumbersome and error prone.
-2. Lengthy development :- in tradional manuual pipeline, building a pipeline, testing it and then depoying it takes huge time which can delay the relevent information to 
+1. Custom coding :- In traditinal manual pipelines, we need to write custom code which is very cumbersome and error prone.
+2. Lengthy development :- In tradional manuual pipeline, building a pipeline, testing it and then depoying it takes huge time which can delay the relevent information to 
                           stakeholders
-3. Brittle pipelines :- hand coding pipelines are not capable to handle frequest changes.
+3. Brittle pipelines :- Hand coding pipelines are not capable to handle frequest changes.
 
 **Features of SDC(StreamSets Data Collector)**
 
 1. Quickly building pipeline.
 2. Drag and drop connectors for batch and streaming source/destinations.
 3. Minimal schema specification needed which ultimately speed up the pipeline development.
-4. it can detect data drift and propogates the changes into the target data automatically.
+4. It can detect data drift and propogates the changes into the target data automatically.
 5. To solve your ingest needs, you can use a single Data Collector to run one or more pipelines. Or you might install a series of Data Collectors on multiple nodes.
 6. In pipelines that write to Hive or parquet or to PostgreSQL, you can implement a data drift solution that detects drift in incoming data and updates tables in destination systems. 
 7. While the pipeline runs, you can monitor the pipeline to verify that the pipeline performs as expected. You can also define metric and data rules and alerts to let you know when certain thresholds are reached.
@@ -109,9 +109,9 @@ Pipeline starts and perform the following steps for each batch of messages:
 
 Step 1 : "Ingest Tweets Stream" stage takes the stream of tweets from tweeter using tweeter's stream API.
 
-Step 2 : if the tweet's language is englist then it is moved to step 3.1, otherwise it is moved to trash(step 3.2).
+Step 2 : If the tweet's language is englist then it is moved to step 3.1, otherwise it is moved to trash(step 3.2).
 
-Step 3.1: only required tweeter fields are selected from the tweet's json.
+Step 3.1: Only required tweeter fields are selected from the tweet's json.
 
 Step 4: Tweet's nested json is flattened.
 
@@ -153,25 +153,25 @@ You can monitor running pipeline(comple pipeline or each pipeline stage).
 
 ![p6](https://user-images.githubusercontent.com/12975741/55286620-98429180-53bb-11e9-9247-0d93b4cc5a9a.png)
 
-above pipeline shows that 346 tweets have been injested into the pipeline and 346 tweets are loaded into the destination system.
+Above pipeline shows that 346 tweets have been injested into the pipeline and 346 tweets are loaded into the destination system.
 
 ![p2](https://user-images.githubusercontent.com/12975741/55286782-eb1d4880-53bd-11e9-81f7-e59c8f5b7215.png)
 
-above pipeline shows that what are the good records ,error records ,input records and output records for stage "fields selection".
+Above pipeline shows that what are the good records ,error records ,input records and output records for stage "fields selection".
 
 ![p3](https://user-images.githubusercontent.com/12975741/55286786-ee183900-53bd-11e9-9f7b-17cd93f9198c.png)
 
-above pipeline shows that for the selected stage("stream selector") , input records sent to the stage is 462, output records sent from output 1(Trash) is 106 and output reords sent from output2(field type converter) is 356.
+Above pipeline shows that for the selected stage("stream selector") , input records sent to the stage is 462, output records sent from output 1(Trash) is 106 and output reords sent from output2(field type converter) is 356.
 
 ![p4](https://user-images.githubusercontent.com/12975741/55286791-f2445680-53bd-11e9-8bb8-a984f9d6ca18.png)
 
-above pipeline shows the error records.
+Above pipeline shows the error records.
 
 ![p5](https://user-images.githubusercontent.com/12975741/55286793-f6707400-53bd-11e9-97de-8d2d6e738221.png)
 
-above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
+Above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
 
-**First pipeline activity configuration**
+**First pipeline stage configuration**
 
 Below are the configuration i have used in first pipeline's stages:
 
@@ -200,7 +200,7 @@ Below are the configuration i have used in first pipeline's stages:
 ![p333](https://user-images.githubusercontent.com/12975741/55287112-6254db80-53c2-11e9-8c41-2291b06fb126.png)
 
 
-**Second pipeline activity configuration**
+**Second pipeline stage configuration**
 
 Below are the configuration i have used in second pipeline's stages:
 
@@ -218,3 +218,4 @@ Below are the configuration i have used in second pipeline's stages:
 
 ![p1111](https://user-images.githubusercontent.com/12975741/55287129-80bad700-53c2-11e9-93f6-66c4b5116637.png)
 
+WIP: i will update the remaining part later.
