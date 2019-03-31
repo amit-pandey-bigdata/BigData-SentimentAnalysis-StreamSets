@@ -153,19 +153,19 @@ You can monitor running pipeline(comple pipeline or each pipeline step).
 
 above pipeline shows that 346 tweets have been injested into the pipeline and 346 tweets are loaded into the destination system.
 
-![p2](https://user-images.githubusercontent.com/12975741/55286523-506f3a80-53ba-11e9-9781-00fe81a4e45a.png)
+![p2](https://user-images.githubusercontent.com/12975741/55286782-eb1d4880-53bd-11e9-81f7-e59c8f5b7215.png)
 
 above pipeline shows that what are the good records ,error records ,input records and output records for stage "fields selection".
 
-![p3](https://user-images.githubusercontent.com/12975741/55286527-582edf00-53ba-11e9-927c-82fc5d587299.png)'
+![p3](https://user-images.githubusercontent.com/12975741/55286786-ee183900-53bd-11e9-9f7b-17cd93f9198c.png)
 
 above pipeline shows that for the selected stage("stream selector") , input records sent to the stage is 462, output records sent from output 1(Trash) is 106 and output reords sent from output2(field type converter) is 356.
 
-![p4](https://user-images.githubusercontent.com/12975741/55286529-5fee8380-53ba-11e9-9401-2dba541277b0.png)
+![p4](https://user-images.githubusercontent.com/12975741/55286791-f2445680-53bd-11e9-8bb8-a984f9d6ca18.png)
 
-above pipeline shows the error records
+above pipeline shows the error records.
 
-![p5](https://user-images.githubusercontent.com/12975741/55286560-c7a4ce80-53ba-11e9-9d72-d15c94861cd4.png)
+![p5](https://user-images.githubusercontent.com/12975741/55286793-f6707400-53bd-11e9-97de-8d2d6e738221.png)
 
 above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
 
