@@ -103,3 +103,16 @@ The second pipeline takes the data from kafka topic and after performing require
 
 ![pic1_pipeline1](https://user-images.githubusercontent.com/12975741/55283027-0b75e480-5377-11e9-800c-aab7e2306799.png)
 
+In the above pipeline image, you can see the set of stages with step mentioned to show the flow of data.
+
+Pipeline starts and perform the following steps for each batch of messages:
+
+Step 1 : "Ingest Tweets Stream" stage takes the stream of tweets from tweeter using tweeter's stream API.
+Step 2 : if the tweet's language is englist then it is moved to step 3.1, otherwise it is moved to trash(step 3.2).
+Step 3.1: only required tweeter fields are selected from the tweet's json.
+Step 4: Tweet's nested json is flattened.
+Step 5: Tweet's field data type is converted on the basis of field's data type.
+Step 6: Tweet's field data type is converte on the basis of field name.
+Step 7: Tweet's text is preprocessed and cleaned using NLTK in "Jython Evaluator". Jython is java implementation of Python.here i have used a jython script in java language to invoke python script which actually uses the NLTK library. i have not found working NLTK library for jython.
+Step 8: The transformed tweet message object is saved in kafka topic using kafka producer in kafka cluster.
+
