@@ -1,4 +1,4 @@
-# BigData-SentimentAnalysis-StreamSets
+# Sentiment Analysis using StremSets SDC on Big Data Cluster
 
 Below are the tools used for implementing the use case "Twitter Sentiment Analysis using StreamSets on Big Data Cluster":
 
