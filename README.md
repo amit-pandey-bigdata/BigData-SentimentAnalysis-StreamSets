@@ -100,3 +100,6 @@ First pipeline takes stream data from twitter and after performing required tran
 The second pipeline takes the data from kafka topic and after performing required transformation , it store the data into RDBMS data table. Then using Tableau, we coonect to the RDBMS database and display the insights.
 
 **First pipeline**
+
+![pic1_pipeline1](https://user-images.githubusercontent.com/12975741/55283027-0b75e480-5377-11e9-800c-aab7e2306799.png)
+
