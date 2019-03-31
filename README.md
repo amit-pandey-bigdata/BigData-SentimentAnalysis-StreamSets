@@ -126,7 +126,7 @@ Step 8: The transformed tweet message object is saved in kafka topic using kafka
 
 **Second pipeline**
 
-![pic1_pipeline1](https://user-images.githubusercontent.com/12975741/55283027-0b75e480-5377-11e9-800c-aab7e2306799.png)
+![pic2_pipeline1](https://user-images.githubusercontent.com/12975741/55283143-eafb5980-5379-11e9-82f4-f431d21e2303.png)
 
 In the above pipeline image, you can see the set of stages with step mentioned to show the flow of data.
 
