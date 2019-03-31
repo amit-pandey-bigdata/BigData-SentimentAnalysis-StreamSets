@@ -172,6 +172,7 @@ above pipeline shows the error records.
 above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
 
 **First pipeline activity configuration**
+
 Below are the configuration i have used in first pipeline's stages:
 
 ![p11](https://user-images.githubusercontent.com/12975741/55287075-2752a800-53c2-11e9-8b5a-11021d87b64b.png)
@@ -200,6 +201,7 @@ Below are the configuration i have used in first pipeline's stages:
 
 
 **Second pipeline activity configuration**
+
 Below are the configuration i have used in second pipeline's stages:
 
 ![p444](https://user-images.githubusercontent.com/12975741/55287113-67198f80-53c2-11e9-89d5-3589fca52e5e.png)
