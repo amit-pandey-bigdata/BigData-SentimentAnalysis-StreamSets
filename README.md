@@ -147,6 +147,8 @@ Step 6: The tweet is saved into RDBMS database.
 
 **Pipeline monitoring and data preview(in preview mode, not in running mode)**
 
+**Note: The pipeline shown below are different as i captured them before i made the final changes to the pipelines.i have added them here just to give an idea of monitoring and error of any pipeline**
+
 You can monitor running pipeline(comple pipeline or each pipeline step).
 
 ![p6](https://user-images.githubusercontent.com/12975741/55286620-98429180-53bb-11e9-9247-0d93b4cc5a9a.png)
@@ -169,6 +171,48 @@ above pipeline shows the error records.
 
 above pipeline is running in cluster execution mode and it has created muliple worker SDC instances to run the pipeline in cluster.
 
+**First pipeline activity configuration**
+Below are the configuration i have used in first pipeline's stages:
+
+![p11](https://user-images.githubusercontent.com/12975741/55287075-2752a800-53c2-11e9-8b5a-11021d87b64b.png)
+
+![p22](https://user-images.githubusercontent.com/12975741/55287079-30437980-53c2-11e9-9733-255fedef7d2f.png)
+
+![p33](https://user-images.githubusercontent.com/12975741/55287085-376a8780-53c2-11e9-9b78-0be9dfc9cd11.png)
+
+![p44](https://user-images.githubusercontent.com/12975741/55287087-3b96a500-53c2-11e9-9a27-f68498efc949.png)
+
+![p55](https://user-images.githubusercontent.com/12975741/55287089-3f2a2c00-53c2-11e9-8fab-62533f3cf9a8.png)
+
+![p66](https://user-images.githubusercontent.com/12975741/55287093-42bdb300-53c2-11e9-92cd-42d03621116f.png)
+
+![p77](https://user-images.githubusercontent.com/12975741/55287094-45200d00-53c2-11e9-91b9-f205fc76bb04.png)
+
+![p88](https://user-images.githubusercontent.com/12975741/55287096-47826700-53c2-11e9-93a2-0f333c788211.png)
+
+![p99](https://user-images.githubusercontent.com/12975741/55287107-5406bf80-53c2-11e9-8fc7-e72453186236.png)
+
+![p111](https://user-images.githubusercontent.com/12975741/55287109-5c5efa80-53c2-11e9-99e5-f2f1e1e52bf5.png)
+
+![p222](https://user-images.githubusercontent.com/12975741/55287110-5ec15480-53c2-11e9-8e78-4c93b29b7099.png)
+
+![p333](https://user-images.githubusercontent.com/12975741/55287112-6254db80-53c2-11e9-8c41-2291b06fb126.png)
 
 
+**Second pipeline activity configuration**
+Below are the configuration i have used in second pipeline's stages:
+
+![p444](https://user-images.githubusercontent.com/12975741/55287113-67198f80-53c2-11e9-89d5-3589fca52e5e.png)
+
+![p555](https://user-images.githubusercontent.com/12975741/55287115-6a148000-53c2-11e9-97c7-279f47f66ed0.png)
+
+![p666](https://user-images.githubusercontent.com/12975741/55287118-74367e80-53c2-11e9-8751-a742f7819820.png)
+
+![p777](https://user-images.githubusercontent.com/12975741/55287120-77316f00-53c2-11e9-968a-5030a94d0ee1.png)
+
+![p888](https://user-images.githubusercontent.com/12975741/55287122-78fb3280-53c2-11e9-8b6a-6866e3fb35df.png)
+
+![p999](https://user-images.githubusercontent.com/12975741/55287126-7e587d00-53c2-11e9-8ca9-ccc5f937ff57.png)
+
+![p1111](https://user-images.githubusercontent.com/12975741/55287129-80bad700-53c2-11e9-93f6-66c4b5116637.png)
 
